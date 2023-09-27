@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fceec8;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+.left-content,
+.right-content {
+    flex-basis: 50%;
+}
+
+.left-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr)); ovo je staro*/
+    /*ovo pogledati*/
+    grid-gap: 2rem;
+    flex: 0 0 calc(10% - 20px);
+    font-size: 32px;
+
+}
+
+.card {
+    width: 600px;
+    height: auto;
+    background-color: #9edef9;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex: 0 0 calc(10% - 20px);
+}
+
+.right-content {
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}
+
+.left-content img {
+    /* ovo sam ja doda da povecam slike */
+    height: 200px;
+    width: auto;
+}
+
+.right-content img {
+    margin: 2rem;
+    height: 500px;
+}
+
+.right-content h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 120px;
+}
+
+.abilities {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.abilities .group {
+    background-color: orangered;
+    color: white;
+    padding: 0.5rem;
+    font-size: 32px;
+    border-radius: 8px;
+}
+
+.base-stats {
+    margin-top: 2rem;
+    font-size: 32px;
+}
+
+.btn-group {
+    display: flex;
+}
+
+.btn-group button {
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+    border-radius: 8px;
+
+}
